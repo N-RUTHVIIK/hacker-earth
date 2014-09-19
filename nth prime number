@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+  int c=0,n,i,j;
+  
+  scanf("%d",&n); 
+ 
+ for(j=2;j<=10000;j++)
+ {
+   for(i=2;i<=j;i++)
+  {
+
+   if (i==j)
+   { c++;
+     if (n==c)
+     printf("%d",j);
+   }
+   
+   else if((j%i)==0)
+       break;
+   
+  } 
+ }  
+}  
